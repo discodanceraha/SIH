@@ -1,0 +1,7 @@
+{
+  "name": "WebTechProject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,86 @@
+
+  <!-- <ion-split-pane contentId="main-content"> -->
+  <ion-menu side="start" contentId="main-content">
+    <ion-content style="--background:white;">
+      <div style="display:flex; justify-content: end; align-items: center;border-radius: 0px 24px 0px 0px;background-color: white;">
+        <ion-menu-toggle>
+            <ion-button style="--background: white;box-shadow: none;border: none;">
+              <ion-icon name="chevron-back" style="color:#252525"></ion-icon>
+            </ion-button>
+        </ion-menu-toggle>
+      </div>
+    
+  
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+      <div class="line"></div>
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+      <ion-menu-toggle>
+        <ion-row style="background-color:white;" (click)="clickProfile()">
+          <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+            <ion-icon name="person" style="color:#161616;"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Profile</p>
+          </ion-col>
+        </ion-row>
+      </ion-menu-toggle>
+
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+      <div class="line"></div>
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+    <ion-menu-toggle>
+      <ion-row style="background-color:white;" (click)="clickAttendance()">
+        <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+          <ion-icon name="calendar" style="color:#161616;"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Attendance</p>
+        </ion-col>
+      </ion-row>
+    </ion-menu-toggle>
+  
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+      <div class="line"></div>
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+    <ion-menu-toggle>
+      <ion-row style="background-color:white;" (click)="clickPending()">
+        <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+          <ion-icon name="hourglass" style="color:#161616;"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Pending</p>
+        </ion-col>
+      </ion-row>
+    </ion-menu-toggle>
+  
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+      <div class="line"></div>
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+  
+      <ion-menu-toggle>
+        <ion-row style="background-color:white;" (click)="clickLogout()">
+          <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+            <ion-icon name="log-out" style="color:#161616;"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Logout</p>
+          </ion-col>
+        </ion-row>
+      </ion-menu-toggle>
+
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+      <div class="line"></div>
+      <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+      
+  
+    </ion-content>
+  </ion-menu>
+<!-- </ion-split-pane> -->
+  <ion-app>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+</ion-app>

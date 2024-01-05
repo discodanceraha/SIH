@@ -1,0 +1,32 @@
+<!-- <ion-header>
+  <ion-toolbar style="--background:white;">
+    <ion-buttons slot="start" style="color:black;">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="color:black;" class="ion-text-center">Pending</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-grid class="gridClass">
+
+  <p class="cardHeader">Pending</p>
+  <br>
+
+
+  <div class="tabs">
+
+    <button class="tabbutton" (click)="clickProfile()">
+      <ion-icon name="person" style="color:white;" size="large"></ion-icon>
+    </button>
+
+    <button class="tabbutton" (click)="clickAttendance()">
+      <ion-icon name="calendar" style="color:white;" size="large"></ion-icon>
+    </button>
+
+    <button class="tabbutton" (click)="clickPending()">
+      <ion-icon name="hourglass" style="color:white;" size="large"></ion-icon>
+    </button>
+
+  </div>
+  
+</ion-grid>
